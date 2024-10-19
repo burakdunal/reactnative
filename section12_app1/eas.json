@@ -5,14 +5,16 @@
         "buildType": "apk"
       }
     },
-    "preview2": {
+    "development": {
       "android": {
-        "gradleCommand": ":app:assembleRelease"
+        "developmentClient": true,
+        "buildType": "apk"
       }
     },
-    "preview3": {
-      "developmentClient": true
-    },
-    "production": {}
+    "production": {
+      "android": {
+        "buildType": "aab"
+      }
+    }
   }
 }
