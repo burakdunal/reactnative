@@ -27,7 +27,6 @@ export default function App() {
       .catch((err) => {
         Alert.alert("DB connection error","Can not open the database");
         setDbInit(true);
-        console.log(err);
       });
   }, []);
 
