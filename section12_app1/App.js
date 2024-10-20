@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { init } from "./util/database";
 import { useState } from "react";
 import PlaceDetails from "./screens/PlaceDetails";
+import { Alert } from "react-native";
 
 const Stack = createNativeStackNavigator();
 SplashScreen.preventAutoHideAsync();
@@ -24,7 +25,9 @@ export default function App() {
         setDbInit(true);
       })
       .catch((err) => {
-        console.log(err);
+        Alert.alert("DB connection error", err);
+        setDbInit(true);
+        // console.log(err);
       });
   }, []);
 
