@@ -22,6 +22,11 @@
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC34theHCQB15lsIZwuAdGY0BtbU3Z33ek"
+        }
+      },
       "package": "com.burakdunal.section12_app1"
     },
     "web": {

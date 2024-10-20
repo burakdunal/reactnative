@@ -79,7 +79,13 @@ function LocationPicker({ onPickedLocation }) {
     // console.log(JSON.stringify(location,null, 2));
   }
 
-  function pickOnMapHandler() {
+  async function pickOnMapHandler() {
+    const hasPermission = await verifyPermissions();
+
+    if (!hasPermission) {
+      return;
+    }
+    
     navigation.navigate("Map");
   }
 
