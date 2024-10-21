@@ -8,7 +8,7 @@ export default {
   expo: {
     name: "Push Me App",
     slug: "section15_app1",
-    version: "1.0.0",
+    version: "1.0.1",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "light",
@@ -34,7 +34,7 @@ export default {
       [
         "expo-notifications",
         {
-          icon: "./local/assets/icon.png",
+          icon: "./assets/icon.png",
           color: "#ffffff",
           defaultChannel: "default",
         },
