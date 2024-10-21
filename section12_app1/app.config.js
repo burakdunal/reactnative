@@ -4,9 +4,9 @@ const GOOGLE_KEY = GOOGLE_API_KEY;
 
 export default {
   expo: {
-    name: "section12_app1",
-    slug: "section12_app1",
-    version: "1.1.1",
+    name: "Favorite Places",
+    slug: "favorite-places",
+    version: "1.1.2",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "light",
@@ -29,7 +29,7 @@ export default {
           apiKey: GOOGLE_KEY ? GOOGLE_KEY : process.env.GOOGLE_API_KEY, // Burada .env dosyasından gelen API anahtarı okunuyor.
         },
       },
-      package: "com.burakdunal.section12_app1",
+      package: "com.burakdunal.favoriteplaces",
     },
     web: {
       favicon: "./assets/favicon.png",
@@ -45,7 +45,7 @@ export default {
     ],
     extra: {
       eas: {
-        projectId: "7d1f3a02-d3e3-455e-ae51-8712cf2267e7",
+        projectId: "c6bb827d-f162-43d5-ac2a-518b6b28d03b",
       },
     },
   },
